@@ -5,10 +5,16 @@ import './App.css';
 class App extends React.Component {
 
   handleClick = () => {
-    let in1 = parseInt(this.input1.value);
-    let in2 = parseInt(this.input2.value);
+    let in1 = parseInt(this.input1.value, 10);
+    let in2 = parseInt(this.input2.value, 10);
     switch(this.op.value){
       case '+': this.setState({result: in1 + in2});
+        break;
+      case '-': this.setState({result:in1-in2});
+        break;
+      case 'x': this.setState({result:in1*in2});
+        break;
+      case '/': this.setState({result:in1/in2});
         break;
     } 
   }
