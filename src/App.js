@@ -44,7 +44,7 @@ class App extends React.Component {
           </select>
           <input ref={input => this.input2 = input} type="number"/>
           <button onClick={this.handleClick}>=</button>
-          <label>{this.state.result}</label>
+          <label className="App-result">{this.state.result}</label>
         </p>
       </div>
     );
